@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rak Buku Digital</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+    <header>
+        <h1>Rak Buku Digital</h1>
+        <p>Atur dan kelola koleksi buku Anda dengan mudah</p>
+    </header>
+    <main>
+        <section>
+            <h2>Tambah atau Edit Buku</h2>
+            <form id="bookForm">
+                <label for="bookFormTitle">Judul Buku:</label>
+                <input type="text" id="bookFormTitle" placeholder="Masukkan judul buku" required>
+                <label for="bookFormAuthor">Penulis:</label>
+                <input type="text" id="bookFormAuthor" placeholder="Masukkan nama penulis" required>
+                <label for="bookFormYear">Tahun Terbit:</label>
+                <input type="number" id="bookFormYear" placeholder="Masukkan tahun terbit" required>
+                <label>
+                    <input type="checkbox" id="bookFormIsComplete"> Sudah Selesai Dibaca
+                </label>
+                <button type="submit">Simpan Buku</button>
+            </form>
+        </section>
+        <section>
+            <h2>Cari Buku</h2>
+            <form id="searchBook">
+                <input type="text" id="searchBookTitle" placeholder="Cari berdasarkan judul...">
+                <button type="submit">Cari Buku</button>
+            </form>
+        </section>
+        <section id="bookListSection">
+            <div>
+                <h2>Belum Selesai Dibaca</h2>
+                <div id="incompleteBookList"></div>
+            </div>
+            <div>
+                <h2>Sudah Selesai Dibaca</h2>
+                <div id="completeBookList"></div>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
